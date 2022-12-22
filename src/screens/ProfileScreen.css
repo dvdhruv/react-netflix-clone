@@ -1,0 +1,137 @@
+.profileScreen{
+    height: 100vh;
+    color: white ;
+}
+.profileScreen__body{
+    width: 50%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.profileScreen__info{
+    display: flex;
+}
+.profileScreen__details{
+    color: white;
+    margin-left: 25px;
+    flex: 1;
+}
+.profileScreen__details >h2{
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.profileScreen__body>h1{
+    font-size: 60px;
+    font-weight: 40px;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+.profileScreen__info>img{
+    height: 100px;
+}
+.profileScreen__plans{
+    margin-top: 20px;
+}
+.profileScreen__plans >h3{
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 10px;
+}
+/*  */
+
+
+.profileScreen__details h2 input:focus {
+	border-bottom: 1px solid #e87c03;
+}
+
+.profileScreen__plans h3 {
+	border-bottom: 1px solid #282c2d;
+	padding-bottom: 10px;
+}
+
+.profileScreen__plans {
+	margin-top: 20px;
+	opacity: 0.8;
+}
+
+.profileScreen__plans:hover {
+	opacity: 1;
+}
+
+.profileScreen__plans--date {
+	margin-top: 20px;
+}
+
+.profileScreen__plans--plan {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	margin-right: 0;
+	margin-bottom: 25px;
+}
+
+.profileScreen__plans--plan:hover {
+	opacity: 1;
+}
+
+.profileScreen__plans--plan span {
+	font-size: 14px;
+}
+
+.profileScreen__plans--plan button {
+	max-height: 37px;
+	min-height: 37px;
+	background-color: #e50914;
+	padding: 0 10px;
+	font-size: 1rem;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	
+}
+
+.profileScreen__plans--plan button.profileScreen__plans--Premium {
+	background-color: gray;
+	color: white;
+	max-height: 43px;
+}
+
+.profileScreen__signOut {
+	background-color: #e50914;
+	padding: 16px 20px;
+	font-size: 1rem;
+	color: white;
+	margin-bottom: 28px;
+	margin-top: 20px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	
+}
+
+@media (max-width: 768px) {
+	.profileScreen{
+		height: 140vh;
+		color: white ;
+	}
+	.profileScreen__body {
+		width: 85%;
+		padding-top: 80px;
+		overflow: hidden;
+	}
+
+	.profileScreen__body h1 {
+		font-size: 32px;
+	}
+
+	.profileScreen__info img {
+		display: none;
+	}
+}
